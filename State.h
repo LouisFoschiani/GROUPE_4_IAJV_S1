@@ -1,10 +1,14 @@
 #pragma once
 
+#include <iostream>;
+
 class State {
-private:
+public:
 	int mentalHealth;
 	int elo;
+	int cleanliness;
 
+	virtual ~State() {} // Destructeur virtuel
 	void virtual Execute() const;
 
 };
@@ -16,13 +20,7 @@ class State_Play : State {
 };
 
 
-class State_Shower : State {
-
-	void virtual Execute()const override;
-
-};
-
-class State_TouchGrass : State {
+class State_Heal : State {
 
 	void virtual Execute()const override;
 

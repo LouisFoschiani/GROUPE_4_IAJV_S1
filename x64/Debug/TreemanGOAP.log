@@ -1,0 +1,21 @@
+﻿  Action.cpp
+D:\GitHub\GROUPE_4_IAJV_S1\Action.h(23,18): error C2061: erreur de syntaxe : identificateur 'PlayerState'
+D:\GitHub\GROUPE_4_IAJV_S1\Action.h(26,47): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\GitHub\GROUPE_4_IAJV_S1\Action.h(26,47): error C2143: erreur de syntaxe : absence de ',' avant '&'
+D:\GitHub\GROUPE_4_IAJV_S1\Action.cpp(7,14): error C2511: 'void Action::Execute(PlayerState &)' : impossible de trouver la fonction membre surchargée dans 'Action'
+D:\GitHub\GROUPE_4_IAJV_S1\Action.h(19,7): message : voir la déclaration de 'Action'
+D:\GitHub\GROUPE_4_IAJV_S1\Action.cpp(9,47): error C2059: erreur de syntaxe : ')'
+D:\GitHub\GROUPE_4_IAJV_S1\Action.cpp(9,49): error C2143: erreur de syntaxe : absence de ';' avant '{'
+D:\GitHub\GROUPE_4_IAJV_S1\Action.cpp(25,14): error C2511: 'bool Action::ArePreconditionsMet(const PlayerState &) const' : impossible de trouver la fonction membre surchargée dans 'Action'
+D:\GitHub\GROUPE_4_IAJV_S1\Action.h(19,7): message : voir la déclaration de 'Action'
+  PuantManGOAP.cpp
+D:\GitHub\GROUPE_4_IAJV_S1\Action.h(23,18): error C2061: erreur de syntaxe : identificateur 'PlayerState'
+D:\GitHub\GROUPE_4_IAJV_S1\Action.h(26,47): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\GitHub\GROUPE_4_IAJV_S1\Action.h(26,47): error C2143: erreur de syntaxe : absence de ',' avant '&'
+D:\GitHub\GROUPE_4_IAJV_S1\PuantManGOAP.cpp(71,23): error C2660: 'Action::Execute' : la fonction ne prend pas 1 arguments
+D:\GitHub\GROUPE_4_IAJV_S1\Action.h(23,10): message : voir la déclaration de 'Action::Execute'
+D:\GitHub\GROUPE_4_IAJV_S1\PuantManGOAP.cpp(71,23): message : lors de la tentative de mise en correspondance de la liste des arguments '(PlayerState)'
+D:\GitHub\GROUPE_4_IAJV_S1\PuantManGOAP.cpp(82,19): error C2660: 'Action::Execute' : la fonction ne prend pas 1 arguments
+D:\GitHub\GROUPE_4_IAJV_S1\Action.h(23,10): message : voir la déclaration de 'Action::Execute'
+D:\GitHub\GROUPE_4_IAJV_S1\PuantManGOAP.cpp(82,19): message : lors de la tentative de mise en correspondance de la liste des arguments '(PlayerState)'
+  Génération de code en cours...
