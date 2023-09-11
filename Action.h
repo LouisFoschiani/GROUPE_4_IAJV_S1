@@ -2,6 +2,22 @@
 
 #include "State.h" // Incluez le fichier qui définit PlayerState si nécessaire
 
+
+
+// Structure pour représenter les préconditions d'une action
+struct Preconditions {
+    int eloRequirement;
+    int cleanlinessRequirement;
+    int mentalHealthRequirement;
+};
+
+// Structure pour représenter les effets d'une action
+struct Effects {
+    int elo;
+    int cleanliness;
+    int mentalHealth;
+};
+
 class Action {
 public:
     virtual void Execute(State& state) = 0;
