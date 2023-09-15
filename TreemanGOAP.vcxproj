@@ -128,13 +128,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Action.cpp" />
-    <ClCompile Include="State.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="PuantMan.cpp" />
     <ClCompile Include="PuantManGOAP.cpp" />
+    <ClCompile Include="StateMachine.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Action.h" />
-    <ClInclude Include="State.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="PuantMan.h" />
+    <ClInclude Include="StateMachine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

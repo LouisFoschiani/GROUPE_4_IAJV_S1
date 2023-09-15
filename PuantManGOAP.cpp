@@ -1,15 +1,41 @@
+#include <vector>
+#include <windows.h>
 #include <iostream>
-#include "State.h"
+#include <vector>
+#include <unordered_set>
+#include <functional>
+#include "StateMachine.h"
+#include "PuantMan.h"
 
-#define LOL_ELO_NEEDED = 500; // elo pour finir
-#define MENTAL_HEALTH_PER_GRASS = 5; // santé par grass touch
-#define LOL_ELO_PER_GRASS = 25; // elo perdu par grass touch
-#define MENTAL_HEALTH_PER_SHOWER = 2; // santé par shower
-#define LOL_ELO_PER_SHOWER = 10; // elo perdu par douche
-#define MENTAL_HEALTH_PER_LOL_TIME = 10; // santé perdu par game de lol logique
+int main() {
+  
+    StateMachine* sm = new StateMachine();
+    PuantMan* pm = new PuantMan();
 
+    sm->Init(*pm);
 
-int main()
-{
-    std::cout << "Hello World!\n";
+    std::cout << "Etat du joueur au debut: \n\n";
+    pm->Debug();
+    std::cout << "\n\n";
+
+    std::vector<std::string> path = sm->Tick(*pm);
+
+    std::vector<std::string>::iterator it = path.end();
+
+    std::cout << "Chemin depuis le debut vers l'arrivee: \n\n";
+    
+    while (it != path.begin())
+    {
+        --it;
+        std::cout << *it << "\n";
+        Sleep(100);
+    }
+
+    std::cout << "\nEtat du joueur a la fin: \n\n";
+    pm->Debug();
+
+    delete sm;
+    delete pm;
+
+    return 0;
 }
